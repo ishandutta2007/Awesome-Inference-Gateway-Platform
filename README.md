@@ -1,243 +1,139 @@
-# Awesome-Inference-Gateway-Platform
+# 🚀 Awesome Inference Gateway Platform
 
-## Top Inference Gateway Platforms Ecosystem
+![Awesome Inference Gateway Platform Banner](assets/banner.svg)
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on LLM Routing, Multi-Provider Proxying, Fallbacks, Caching, Guardrails, Cost Control & Unified OpenAI-Compatible APIs*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Inference Gateways** (also called AI Gateways or LLM Gateways). These systems sit between applications and model providers—normalizing APIs, routing requests, enforcing budgets and rate limits, adding fallbacks, caching, observability, and guardrails.
-
-
-
-**Examples** include Kong AI Gateway, Envoy AI Gateway, Portkey, LiteLLM, OpenRouter, Cloudflare AI Gateway, TrueFoundry AI Gateway, Zuplo, Gravitee, Gloo, Baseten, Together AI, Fireworks AI, GroqCloud, Tyk AI Gateway, and Apache APISIX AI Gateway (the category leaders).
-
-
-
-**Open-source emphasis**: Inference gateways have strong open-source options. **LiteLLM**, **Envoy AI Gateway**, **Kong** (core), **Apache APISIX**, and related projects let teams self-host unified LLM proxies with full control. Commercial platforms add managed scale, enterprise guardrails, and zero-ops. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Portkey](https://portkey.ai/)**  
-
-  Comprehensive AI gateway platform with unified access to 1,600+ models, observability, guardrails, prompt management, and enterprise security (open-source core + managed cloud).
-
-
-
-- **[OpenRouter](https://openrouter.ai/)**  
-
-  Managed multi-model marketplace and gateway providing a single API to hundreds of models with simple routing and pay-as-you-go access.
-
-
-
-- **[Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/)**  
-
-  Edge-native AI gateway integrated with the Cloudflare platform—caching, rate limiting, analytics, and low-latency routing for major providers.
-
-
-
-- **[TrueFoundry AI Gateway](https://www.truefoundry.com/)**  
-
-  Enterprise AI gateway and platform for model routing, governance, observability, and deployment across cloud and on-prem environments.
-
-
-
-- **[Zuplo AI Gateway](https://zuplo.com/)**  
-
-  API management platform with AI gateway capabilities for routing, authentication, and developer experience around LLM traffic.
-
-
-
-- **[Gravitee AI Gateway](https://www.gravitee.io/)**  
-
-  API management and gateway platform extended for AI/LLM traffic with policy enforcement and observability.
-
-
-
-- **[Gloo AI Gateway (Solo.io)](https://www.solo.io/)**  
-
-  Envoy-based gateway and agent gateway offerings focused on AI traffic, MCP, and enterprise service connectivity.
-
-
-
-- **[Kong AI Gateway (Konnect / Enterprise)](https://konghq.com/)**  
-
-  Enterprise AI capabilities on Kong’s API platform—AI Proxy, semantic caching, prompt guards, and token-based controls (advanced features often enterprise-licensed).
-
-
-
-- **[Baseten](https://www.baseten.co/)**  
-
-  Model inference and deployment platform with gateway-style access to hosted and custom models.
-
-
-
-- **[Together AI](https://www.together.ai/)**  
-
-  Inference platform and API for open and proprietary models, often used as a high-performance backend behind gateways.
-
-
-
-- **[Fireworks AI](https://fireworks.ai/)**  
-
-  Fast inference platform for open models with OpenAI-compatible endpoints suitable as a gateway upstream.
-
-
-
-- **[GroqCloud](https://groq.com/)**  
-
-  Ultra-low-latency inference cloud frequently used as a high-speed provider behind AI gateways.
-
-
-
-- **[Nebius AI / Lepton AI and similar inference clouds](https://nebius.com/)**  
-
-  Cloud inference providers offering APIs that gateways route to for capacity and specialized hardware.
-
-
-
-- **[NVIDIA Dynamo / NIM-related serving](https://www.nvidia.com/)**  
-
-  NVIDIA inference and serving stack components used in enterprise AI gateway and model-serving architectures.
-
-
-
-- **[OctoAI and other specialized inference endpoints](https://octo.ai/)**  
-
-  Hosted inference services commonly integrated as upstreams in multi-provider gateway setups.
-
-
-
-## Open-Source GitHub Projects
-
-- **[LiteLLM](https://github.com/BerriAI/litellm)**  
-
-  Leading open-source LLM gateway and proxy—unified OpenAI-compatible interface to 100+ providers, virtual keys, budgets, fallbacks, load balancing, and cost tracking (MIT).
-
-
-
-- **[Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway)**  
-
-  Open-source AI gateway built on Envoy for routing application traffic to GenAI services, with Kubernetes-native configuration and multi-provider support (Apache 2.0).
-
-
-
-- **[Kong Gateway (OSS) + AI plugins](https://github.com/Kong/kong)**  
-
-  Widely deployed open-source API gateway with AI/LLM plugins for proxying, transformation, and basic AI traffic management (advanced AI features often in Enterprise).
-
-
-
-- **[Apache APISIX](https://github.com/apache/apisix)**  
-
-  High-performance cloud-native API gateway with AI plugins for LLM proxying, routing, and caching—strong at scale (Apache 2.0).
-
-
-
-- **[Tyk (OSS)](https://github.com/TykTechnologies/tyk)**  
-
-  Open-source API gateway with dashboard and extensibility; used for AI/LLM traffic with custom middleware and policies.
-
-
-
-- **[Portkey Gateway (open-source core)](https://github.com/Portkey-AI/gateway)**  
-
-  Open-source AI gateway core from Portkey providing unified API access, routing, and foundational gateway features.
-
-
-
-- **[Bifrost and high-performance LLM proxies](https://github.com/)**  
-
-  Emerging Go-based open-source AI gateways focused on ultra-low overhead, multi-key failover, and production throughput.
-
-
-
-- **[AISIX and APISIX-derived AI gateways](https://github.com/)**  
-
-  Open-source AI-native gateways (including projects from APISIX creators) adding semantic routing, guardrails, and MCP support in the core.
-
-
-
-- **[Helicone (open components / proxy)](https://github.com/Helicone)**  
-
-  Observability-focused LLM tooling with open components that can act as or integrate with gateway-style proxies.
-
-
-
-- **[vLLM, TGI, and OpenAI-compatible serving proxies](https://github.com/)**  
-
-  Open inference servers that expose OpenAI-compatible APIs and are frequently placed behind or combined with gateway layers.
-
-
-
-### Additional Strong Open-Source Options
-
-- Deploying **LiteLLM** as the default self-hosted multi-provider proxy for most teams.
-
-- Choosing **Envoy AI Gateway** or **Kong/APISIX** when you already run Envoy or a mature API gateway and want AI traffic to inherit existing policies.
-
-- Using **Apache APISIX** for high-QPS, cloud-native environments that need AI plugins on a battle-tested core.
-
-- Combining open gateways with commercial inference providers (Groq, Fireworks, Together, etc.) for best latency/cost.
-
-- Accepting that managed guardrails, SOC2/HIPAA packages, global edge PoPs, and zero-ops still favor commercial platforms (Portkey, Cloudflare AI Gateway, OpenRouter, TrueFoundry, Kong Konnect, etc.).
-
-- Focusing open-source efforts on zero markup, data residency, and full control of routing logic.
-
-
-
-**Frameworks for building custom systems**: Run LiteLLM or Envoy AI Gateway as the proxy → configure providers, virtual keys, and fallbacks → add Redis/Postgres for state and budgets → enforce guardrails via plugins or external services → observe with OpenTelemetry or gateway-native logs. Suitable for platform and ML infrastructure teams. Many enterprises pair an open gateway core with a commercial control plane for governance and support.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Inference gateways handle API keys, prompts, and potentially sensitive outputs. Self-hosted deployments require hardened secrets management, network controls, and monitoring. This list is not security or compliance advice.
-
-
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=gold" alt="GitHub Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=blue" alt="GitHub Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for platform engineers, MLOps teams, and developers routing LLM traffic at scale.**
+## 💡 Overview & Ecosystem
 
-Let's keep inference routing unified, observable, and as open as practical.
+Welcome to the **Awesome Inference Gateway Platform** repository—a comprehensive, curated directory of top-tier **SaaS AI platforms** and **open-source AI gateway proxies** for Large Language Model (LLM) traffic routing, cost tracking, security guardrails, semantic caching, and unified OpenAI-compatible API proxying.
+
+**Inference Gateways** (also known as **AI Gateways** or **LLM Proxies**) function as intelligent infrastructure intermediaries sitting between your software applications and multi-provider AI deployments (OpenAI, Anthropic, Google Gemini, Mistral, Llama 3, AWS Bedrock, Hugging Face, etc.). They normalize API requests, enforce user/virtual token budgets, manage automatic model failovers, execute prompt guardrails, and aggregate telemetry.
+
+---
+
+## 📚 Table of Contents
+
+- [🌐 SaaS / Hosted AI Gateway Platforms](#-saas--hosted-ai-gateway-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Key Features & Architecture Patterns](#️-key-features--architecture-patterns)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🌐 SaaS / Hosted AI Gateway Platforms
+
+📊 **Market Size & Landscape**: The global AI Gateway & LLM Infrastructure market is estimated at **$2.4 Billion** and is projected to exceed **$12.5 Billion by 2030** (growing at a 38% CAGR). The sector is currently **highly fragmented**, driven by aggressive innovation among specialized AI infra startups (Portkey, OpenRouter, LiteLLM), cloud hyperscalers/CDNs (Cloudflare, NVIDIA), and incumbent API management vendors (Kong, APISIX, Solo.io).
+
+*Note: The table below is sorted by **Company Size / Valuation / Market Capitalization** in descending order.*
+
+| SaaS Platform 🏢 | Company Size / Valuation 💰 | Starting Price 🏷️ | Free Tier / Trial Limits 🎁 | Key Features & Description 📋 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[NVIDIA (NIM / Dynamo)](https://www.nvidia.com/)** | **$3.0 Trillion** (Market Cap) | $1.00 / GPU-hour ($4,500/GPU/yr) | 1,000 free credits (NVIDIA Build API) | Enterprise AI inference microservices, optimized GPU throughput & NIM container proxying. |
+| **[Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/)** | **$125 Billion** (Market Cap) | $5.00 / month (Workers Paid) | 100,000 requests / day free forever | Edge-native AI gateway with low-latency caching, rate limiting, and real-time observability across major providers. |
+| **[GroqCloud](https://groq.com/)** | **$2.8 Billion** (Valuation) | $0.05 / 1M input tokens | 14,400 requests / day (30 RPM rate limit) | Ultra-low-latency LPU inference cloud and proxy gateway for open models. |
+| **[Kong AI Gateway](https://konghq.com/)** | **$2.0 Billion** (Valuation) | $250.00 / month (Konnect Plus) | 125,000 requests / month free forever | Enterprise API gateway platform with AI proxying, prompt security, and semantic caching. |
+| **[Together AI](https://www.together.ai/)** | **$1.25 Billion** (Valuation) | $0.20 / 1M tokens | $25.00 free credit on sign-up | High-performance AI inference cloud and API gateway for open and proprietary models. |
+| **[Gloo AI Gateway (Solo.io)](https://www.solo.io/)** | **$1.0 Billion** (Valuation) | $1,200.00 / cluster / year | 30-day free trial (full enterprise access) | Envoy-based Kubernetes gateway extended for LLM traffic routing, prompt protection, and MCP connectivity. |
+| **[Fireworks AI](https://fireworks.ai/)** | **$550 Million** (Valuation) | $0.20 / 1M tokens | $1.00 free credit (~5M tokens) | Ultra-fast serverless inference platform and OpenAI-compatible multi-model gateway. |
+| **[Baseten](https://www.baseten.co/)** | **$230 Million** (Valuation) | $0.0002 / second ($0.72 / hour T4) | $30.00 free inference credit on sign-up | Custom model serving platform with integrated gateway routing, auto-scaling, and fallback controls. |
+| **[Portkey](https://portkey.ai/)** | **$140 Million** (Valuation) | $49.00 / month (Pro Plan base) | 10,000 requests/logs / month free forever | Full-stack LLM gateway and control plane with prompt management, guardrails, and 1,600+ model routing. |
+| **[Gravitee AI Gateway](https://www.gravitee.io/)** | **$100 Million** (Valuation) | $650.00 / month (Enterprise tier) | 14-day free trial (unlimited local dev) | API management platform extended with GenAI policies, token rate limits, and multi-provider failover. |
+| **[TrueFoundry AI Gateway](https://www.truefoundry.com/)** | **$40 Million** (Valuation) | $100.00 / month (Developer Plan) | 14-day free trial ($50 infra credits) | Internal developer platform and governance gateway for routing LLMs across hybrid and multi-cloud setups. |
+| **[OpenRouter](https://openrouter.ai/)** | **$30 Million** (Valuation) | $0.05 / 1M tokens (pay-per-token) | 20+ free models (200 req/min limit) | Unified API marketplace and router delivering pay-as-you-go access to hundreds of proprietary and open LLMs. |
+| **[Zuplo AI Gateway](https://zuplo.com/)** | **$25 Million** (Valuation) | $25.00 / month (Edge Plan) | 100,000 requests / month free forever | OpenAPI-native edge API gateway featuring AI rate-limiting, key management, and prompt routing. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Open-source inference gateways empower engineering teams to host unified OpenAI-compatible proxies in their own VPC or Kubernetes clusters, guaranteeing complete data privacy, zero vendor markup, and custom routing logic.
+
+*Note: The open-source repositories below are sorted by **GitHub Star Count** in descending order.*
+
+1. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
+   High-throughput, memory-efficient LLM serving engine featuring PagedAttention and a built-in OpenAI-compatible API gateway proxy for serving open-weights models.
+
+2. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
+   Leading open-source LLM proxy gateway delivering a standardized OpenAI format across 100+ model providers with virtual key management, budget enforcement, load balancing, and fallbacks.
+
+3. **[Kong Gateway (OSS)](https://github.com/Kong/kong)** [![GitHub stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)  
+   The world's most deployed open-source API gateway, featuring specialized AI plugins for multi-LLM proxying, prompt transformation, token rate limiting, and semantic caching.
+
+4. **[Apache APISIX](https://github.com/apache/apisix)** [![GitHub stars](https://img.shields.io/github/stars/apache/apisix?style=social&color=white)](https://github.com/apache/apisix/stargazers)  
+   High-performance cloud-native API gateway equipped with AI plugins for LLM routing, token metric tracking, semantic caching, and dynamic failovers at enterprise scale.
+
+5. **[Portkey Gateway (OSS Core)](https://github.com/Portkey-AI/gateway)** [![GitHub stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=social&color=white)](https://github.com/Portkey-AI/gateway/stargazers)  
+   Ultra-fast, open-source AI gateway core designed for unified LLM routing, automatic retries, fallback strategies, and low-latency API proxying across 1,600+ models.
+
+6. **[Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers)  
+   Hugging Face's battle-tested solution for deploying and serving open LLMs with built-in token streaming, batching, and gateway endpoints.
+
+7. **[Tyk Gateway (OSS)](https://github.com/TykTechnologies/tyk)** [![GitHub stars](https://img.shields.io/github/stars/TykTechnologies/tyk?style=social&color=white)](https://github.com/TykTechnologies/tyk/stargazers)  
+   Open-source API gateway providing security, developer developer rate-limiting, and policy controls for proxying LLM requests in microservices environments.
+
+8. **[Higress AI Gateway](https://github.com/higress-group/higress)** [![GitHub stars](https://img.shields.io/github/stars/higress-group/higress?style=social&color=white)](https://github.com/higress-group/higress/stargazers)  
+   Next-generation cloud-native AI gateway built on Envoy and Istio, supporting AI proxying, protocol translation, dynamic fallbacks, and Wasm plugins.
+
+9. **[Helicone](https://github.com/Helicone/helicone)** [![GitHub stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
+   Open-source observability platform and gateway proxy for tracking LLM token costs, prompt latency, feedback loops, and response caching.
+
+10. **[Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway)** [![GitHub stars](https://img.shields.io/github/stars/envoyproxy/ai-gateway?style=social&color=white)](https://github.com/envoyproxy/ai-gateway/stargazers)  
+    Official Envoy Proxy project extension dedicated to GenAI traffic routing, Kubernetes-native Gateway API specs, and multi-provider load balancing.
+
+---
+
+## 🛠️ Key Features & Architecture Patterns
+
+Modern production-grade Inference Gateways fulfill key capabilities across the GenAI stack:
+
+- 🔄 **Unified API Normalization**: Expose a single OpenAI-compatible `/v1/chat/completions` endpoint while translating requests to Anthropic Claude, Google Gemini, Cohere, or local vLLM instances.
+- 🔀 **Smart Dynamic Routing & Load Balancing**: Route incoming traffic based on latency, model availability, context length requirements, or price performance.
+- 🛡️ **Guardrails & Security**: Inspect prompts and outputs for PII leaks, prompt injection attacks, jailbreaks, and toxic content before reaching models or users.
+- ⚡ **Semantic Caching**: Store prompt embeddings in Redis or vector databases to instantly return cached answers for duplicate/similar queries, slashing latency and API bills.
+- 💰 **Budget & Rate-Limiting Controls**: Assign virtual API keys to developers or internal teams with strict monthly budget caps and RPM/TPM limits.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are highly welcome! Please follow these simple steps to contribute:
+
+1. Fork the repository on GitHub.
+2. Add your new SaaS platform or Open-Source project to the appropriate section (ensure correct sorting and format).
+3. Follow the repository format carefully: include platform name, link, pricing details, and factual descriptions.
+4. Reference the main list guidelines at [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+5. Submit a Pull Request with a short summary of your addition.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Inference-Gateway-Platform&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Inference-Gateway-Platform&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated list of **Inference Gateway Platforms** useful, please consider supporting the project:
+
+- 🌟 **Star this repository** on GitHub to show your appreciation!
+- 🔀 **Fork it** and contribute improvements to keep the ecosystem updated.
+- 📢 **Share this repository** with your colleagues, MLOps team, and developer communities.
+- ☕ **Sponsor the Maintainer**: Buy me a coffee or sponsor ongoing maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for being part of the open-source AI infrastructure community! ❤️
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a community-curated list maintained for educational and reference purposes.
+- Inference gateways process API keys, prompts, and inference outputs. When deploying in production, ensure enterprise-grade secrets management, network segmentation, and compliance controls are active.

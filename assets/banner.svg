@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d18" />
+      <stop offset="50%" stop-color="#121829" />
+      <stop offset="100%" stop-color="#0d111d" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b92b27" />
+      <stop offset="50%" stop-color="#1565C0" />
+      <stop offset="100%" stop-color="#8a2be2" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#38ef7d" />
+      <stop offset="100%" stop-color="#11998e" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#9b51e0" />
+      <stop offset="100%" stop-color="#00d2ff" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Keyframe Animations -->
+    <style>
+      @keyframes pulseNode {
+        0%, 100% { r: 6px; opacity: 0.8; filter: drop-shadow(0 0 4px #00f2fe); }
+        50% { r: 9px; opacity: 1; filter: drop-shadow(0 0 12px #00f2fe); }
+      }
+      @keyframes pulseNode2 {
+        0%, 100% { r: 5px; opacity: 0.7; filter: drop-shadow(0 0 3px #9b51e0); }
+        50% { r: 8px; opacity: 1; filter: drop-shadow(0 0 10px #9b51e0); }
+      }
+      @keyframes dashMove {
+        0% { stroke-dashoffset: 60; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) scale(1); opacity: 0.3; }
+        50% { transform: translateY(-15px) scale(1.2); opacity: 0.8; }
+        100% { transform: translateY(0px) scale(1); opacity: 0.3; }
+      }
+      @keyframes borderGlow {
+        0%, 100% { stroke: #00f2fe; opacity: 0.4; }
+        50% { stroke: #9b51e0; opacity: 0.9; }
+      }
+
+      .node-1 { animation: pulseNode 3s infinite ease-in-out; }
+      .node-2 { animation: pulseNode2 4s infinite ease-in-out 1s; }
+      .flow-line { stroke-dasharray: 6 10; animation: dashMove 2s linear infinite; }
+      .particle { animation: floatParticle 5s infinite ease-in-out; }
+      .animated-border { animation: borderGlow 4s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Background Decorative Glowing Orbs -->
+  <circle cx="150" cy="80" r="140" fill="#00f2fe" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1050" cy="280" r="160" fill="#9b51e0" opacity="0.09" filter="url(#glow)" />
+
+  <!-- Background Network Graph / Dynamic Flows (Positioned behind main card) -->
+  <g stroke="rgba(0, 242, 254, 0.15)" stroke-width="1.5">
+    <line x1="80" y1="180" x2="220" y2="100" />
+    <line x1="80" y1="180" x2="220" y2="260" />
+    <line x1="220" y1="100" x2="380" y2="180" />
+    <line x1="220" y1="260" x2="380" y2="180" />
+    
+    <line x1="820" y1="180" x2="980" y2="100" />
+    <line x1="820" y1="180" x2="980" y2="260" />
+    <line x1="980" y1="100" x2="1120" y2="180" />
+    <line x1="980" y1="260" x2="1120" y2="180" />
+  </g>
+
+  <!-- Animated Data Flow Lines -->
+  <g stroke="url(#accentCyan)" stroke-width="2" class="flow-line" opacity="0.6">
+    <path d="M 80,180 L 220,100 L 380,180" fill="none" />
+    <path d="M 820,180 L 980,260 L 1120,180" fill="none" />
+  </g>
+
+  <!-- Dynamic Network Nodes -->
+  <circle cx="80" cy="180" r="6" fill="#00f2fe" class="node-1" />
+  <circle cx="220" cy="100" r="5" fill="#9b51e0" class="node-2" />
+  <circle cx="220" cy="260" r="6" fill="#00f2fe" class="node-1" />
+  <circle cx="980" cy="100" r="6" fill="#00f2fe" class="node-1" />
+  <circle cx="980" cy="260" r="5" fill="#9b51e0" class="node-2" />
+  <circle cx="1120" cy="180" r="6" fill="#00f2fe" class="node-1" />
+
+  <!-- Center Card (Glassmorphism backdrop for crisp foreground text) -->
+  <rect x="180" y="45" width="840" height="270" rx="16" fill="url(#cardGrad)" stroke="url(#accentCyan)" stroke-width="1.5" class="animated-border" style="backdrop-filter: blur(10px);" />
+
+  <!-- Badge / Top Pill -->
+  <g transform="translate(470, 70)">
+    <rect x="0" y="0" width="260" height="30" rx="15" fill="rgba(0, 242, 254, 0.12)" stroke="#00f2fe" stroke-width="1" />
+    <text x="130" y="20" fill="#00f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">
+      ENTERPRISE &amp; OPEN SOURCE
+    </text>
+  </g>
+
+  <!-- Foreground Main Title -->
+  <text x="600" y="155" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" text-anchor="middle" filter="url(#softGlow)" letter-spacing="-0.5">
+    Awesome Inference Gateway Platform
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="200" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="500" text-anchor="middle">
+    LLM Routing • Multi-Provider Proxies • Guardrails • Cost Optimization • Fallbacks
+  </text>
+
+  <!-- Dynamic Feature Badges in Card Footer -->
+  <g transform="translate(320, 240)">
+    <!-- Pill 1 -->
+    <rect x="0" y="0" width="160" height="34" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <text x="80" y="22" fill="#38ef7d" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">⚡ High Performance</text>
+    
+    <!-- Pill 2 -->
+    <rect x="180" y="0" width="160" height="34" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <text x="260" y="22" fill="#00f2fe" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">🛡️ Guardrails &amp; Security</text>
+
+    <!-- Pill 3 -->
+    <rect x="360" y="0" width="200" height="34" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <text x="460" y="22" fill="#9b51e0" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">🔄 OpenAI API Compatibility</text>
+  </g>
+
+  <!-- Floating Particles for Visual Flare -->
+  <circle cx="280" cy="120" r="3" fill="#00f2fe" class="particle" />
+  <circle cx="920" cy="240" r="4" fill="#9b51e0" class="particle" style="animation-delay: 2s;" />
+  <circle cx="340" cy="280" r="2.5" fill="#38ef7d" class="particle" style="animation-delay: 1s;" />
+</svg>
