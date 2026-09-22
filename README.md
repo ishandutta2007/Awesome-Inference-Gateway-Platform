@@ -3,7 +3,7 @@
 ![Awesome Inference Gateway Platform Banner](assets/banner.svg)
 
 <p align="center">
-  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=gold" alt="GitHub Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=blue" alt="GitHub Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=gold" alt="GitHub_Stars"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge&color=blue" alt="GitHub Forks"/></a> <a href="https://github.com/ishandutta2007/Awesome-Inference-Gateway-Platform/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Inference-Gateway-Platform?style=for-the-badge" alt="License"/></a> <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
@@ -56,36 +56,36 @@ Welcome to the **Awesome Inference Gateway Platform** repository—a comprehensi
 
 Open-source inference gateways empower engineering teams to host unified OpenAI-compatible proxies in their own VPC or Kubernetes clusters, guaranteeing complete data privacy, zero vendor markup, and custom routing logic.
 
-*Note: The open-source repositories below are sorted by **GitHub Star Count** in descending order.*
+*Note: The open-source repositories below are sorted by **GitHub Stars_Count** in descending order.*
 
-1. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
+1. **[vLLM](https://github.com/vllm-project/vllm)** [![GitHub_Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers)  
    High-throughput, memory-efficient LLM serving engine featuring PagedAttention and a built-in OpenAI-compatible API gateway proxy for serving open-weights models.
 
-2. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
+2. **[LiteLLM](https://github.com/BerriAI/litellm)** [![GitHub_Stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers)  
    Leading open-source LLM proxy gateway delivering a standardized OpenAI format across 100+ model providers with virtual key management, budget enforcement, load balancing, and fallbacks.
 
-3. **[Kong Gateway (OSS)](https://github.com/Kong/kong)** [![GitHub stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)  
+3. **[Kong Gateway (OSS)](https://github.com/Kong/kong)** [![GitHub_Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers)  
    The world's most deployed open-source API gateway, featuring specialized AI plugins for multi-LLM proxying, prompt transformation, token rate limiting, and semantic caching.
 
-4. **[Apache APISIX](https://github.com/apache/apisix)** [![GitHub stars](https://img.shields.io/github/stars/apache/apisix?style=social&color=white)](https://github.com/apache/apisix/stargazers)  
+4. **[Apache APISIX](https://github.com/apache/apisix)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/apisix?style=social&color=white)](https://github.com/apache/apisix/stargazers)  
    High-performance cloud-native API gateway equipped with AI plugins for LLM routing, token metric tracking, semantic caching, and dynamic failovers at enterprise scale.
 
-5. **[Portkey Gateway (OSS Core)](https://github.com/Portkey-AI/gateway)** [![GitHub stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=social&color=white)](https://github.com/Portkey-AI/gateway/stargazers)  
+5. **[Portkey Gateway (OSS Core)](https://github.com/Portkey-AI/gateway)** [![GitHub_Stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=social&color=white)](https://github.com/Portkey-AI/gateway/stargazers)  
    Ultra-fast, open-source AI gateway core designed for unified LLM routing, automatic retries, fallback strategies, and low-latency API proxying across 1,600+ models.
 
-6. **[Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)** [![GitHub stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers)  
+6. **[Text Generation Inference (TGI)](https://github.com/huggingface/text-generation-inference)** [![GitHub_Stars](https://img.shields.io/github/stars/huggingface/text-generation-inference?style=social&color=white)](https://github.com/huggingface/text-generation-inference/stargazers)  
    Hugging Face's battle-tested solution for deploying and serving open LLMs with built-in token streaming, batching, and gateway endpoints.
 
-7. **[Tyk Gateway (OSS)](https://github.com/TykTechnologies/tyk)** [![GitHub stars](https://img.shields.io/github/stars/TykTechnologies/tyk?style=social&color=white)](https://github.com/TykTechnologies/tyk/stargazers)  
+7. **[Tyk Gateway (OSS)](https://github.com/TykTechnologies/tyk)** [![GitHub_Stars](https://img.shields.io/github/stars/TykTechnologies/tyk?style=social&color=white)](https://github.com/TykTechnologies/tyk/stargazers)  
    Open-source API gateway providing security, developer developer rate-limiting, and policy controls for proxying LLM requests in microservices environments.
 
-8. **[Higress AI Gateway](https://github.com/higress-group/higress)** [![GitHub stars](https://img.shields.io/github/stars/higress-group/higress?style=social&color=white)](https://github.com/higress-group/higress/stargazers)  
+8. **[Higress AI Gateway](https://github.com/higress-group/higress)** [![GitHub_Stars](https://img.shields.io/github/stars/higress-group/higress?style=social&color=white)](https://github.com/higress-group/higress/stargazers)  
    Next-generation cloud-native AI gateway built on Envoy and Istio, supporting AI proxying, protocol translation, dynamic fallbacks, and Wasm plugins.
 
-9. **[Helicone](https://github.com/Helicone/helicone)** [![GitHub stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
+9. **[Helicone](https://github.com/Helicone/helicone)** [![GitHub_Stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers)  
    Open-source observability platform and gateway proxy for tracking LLM token costs, prompt latency, feedback loops, and response caching.
 
-10. **[Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway)** [![GitHub stars](https://img.shields.io/github/stars/envoyproxy/ai-gateway?style=social&color=white)](https://github.com/envoyproxy/ai-gateway/stargazers)  
+10. **[Envoy AI Gateway](https://github.com/envoyproxy/ai-gateway)** [![GitHub_Stars](https://img.shields.io/github/stars/envoyproxy/ai-gateway?style=social&color=white)](https://github.com/envoyproxy/ai-gateway/stargazers)  
     Official Envoy Proxy project extension dedicated to GenAI traffic routing, Kubernetes-native Gateway API specs, and multi-provider load balancing.
 
 ---
