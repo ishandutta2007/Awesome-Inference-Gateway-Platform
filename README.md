@@ -49,6 +49,7 @@ Welcome to the **Awesome Inference Gateway Platform** repository—a comprehensi
 | **[TrueFoundry AI Gateway](https://www.truefoundry.com/)** | **$40 Million** (Valuation) | $100.00 / month (Developer Plan) | 14-day free trial ($50 infra credits) | Internal developer platform and governance gateway for routing LLMs across hybrid and multi-cloud setups. |
 | **[OpenRouter](https://openrouter.ai/)** | **$30 Million** (Valuation) | $0.05 / 1M tokens (pay-per-token) | 20+ free models (200 req/min limit) | Unified API marketplace and router delivering pay-as-you-go access to hundreds of proprietary and open LLMs. |
 | **[Zuplo AI Gateway](https://zuplo.com/)** | **$25 Million** (Valuation) | $25.00 / month (Edge Plan) | 100,000 requests / month free forever | OpenAPI-native edge API gateway featuring AI rate-limiting, key management, and prompt routing. |
+| **[200API](https://zawsze.cc.cd)** | Startup/Small | Pay as you go | $1 free trial credit on signup | OpenAI-compatible API relay for GPT, Claude, and DeepSeek at 0.2x-0.5x of official prices, per-token billing, transparent group rates. |
 
 ---
 
